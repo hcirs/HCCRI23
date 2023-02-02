@@ -1,0 +1,53 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, */
+    /* Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: 'Monda', sans-serif;
+    --hccri-red: #690B0B;
+    --hccri-yellow: #CAA213;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.red-nav {
+    background-color: var(--hccri-red);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0 2rem;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--hccri-yellow);
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.hero-main-content {
+    width: 30rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.hccri-logo {
+    width: 100%;
+    height: auto;
+}
