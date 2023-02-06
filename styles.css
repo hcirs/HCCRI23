@@ -10,21 +10,26 @@ body {
 }
 
 .hero {
-    height: 100vh;
+    height: calc(100vh - 3rem);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 3rem;
 }
 
 .red-nav {
     background-color: var(--hccri-red);
     padding: 1rem;
-
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+    position: fixed;
+    top: 0;
 }
 
 .nav-link {
@@ -48,6 +53,10 @@ body {
 }
 
 .hccri-logo {
-    width: 100%;
+    width: 50%;
     height: auto;
+}
+
+.hide {
+    top: -5rem;
 }
