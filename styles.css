@@ -9,7 +9,8 @@ body {
     --hccri-yellow: #CAA213;
 }
 
-.hero, .hero-head {
+.hero,
+.hero-head {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -21,6 +22,9 @@ body {
 
 .hero-head {
     height: calc(100vh - 3rem);
+
+    background: linear-gradient(#ffffff76, #ffffff76),
+        url(static/photos/group-photog.jpg) no-repeat center center/cover;
 }
 
 .red-nav {
@@ -34,6 +38,7 @@ body {
     transition: all 0.4s ease-in-out;
     position: fixed;
     top: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .nav-link {
@@ -60,6 +65,24 @@ body {
     width: calc(100% - 80px);
     margin: 0 auto;
     padding: 3rem;
+
+    display: flex;
+}
+
+.hero-main-content-left {
+    width: 70%;
+    padding: 0 2rem;
+
+}
+
+.hero-main-content-right {
+    width: 30%;
+    padding: 0 2rem;
+}
+
+.hero-main-content-photo {
+    width: 100%;
+    height: auto;
 }
 
 .hero-text {
@@ -68,10 +91,22 @@ body {
 }
 
 .hccri-logo {
-    width: 50%;
+    width: 70%;
     height: auto;
 }
 
 .hide {
     top: -5rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
 }
