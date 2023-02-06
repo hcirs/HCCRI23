@@ -9,14 +9,18 @@ body {
     --hccri-yellow: #CAA213;
 }
 
-.hero {
-    height: calc(100vh - 3rem);
+.hero, .hero-head {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 3rem;
+    overflow: hidden;
+}
+
+.hero-head {
+    height: calc(100vh - 3rem);
 }
 
 .red-nav {
@@ -46,10 +50,21 @@ body {
     text-decoration: none;
 }
 
-.hero-main-content {
+.hero-head-content {
     width: 30rem;
     margin: 0 auto;
     padding: 3rem;
+}
+
+.hero-main-content {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.hero-text {
+    text-align: justify;
+    font-size: 1rem;
 }
 
 .hccri-logo {
