@@ -23,7 +23,7 @@ body {
     height: calc(100vh - 3rem);
     min-height: 700px;
 
-    background: linear-gradient(to bottom, #ffffff75,#ffffff87, #ffffffee, #ffffffff),
+    background: linear-gradient(to bottom, #ffffff75, #ffffff87, #ffffffee, #ffffffff),
         url(static/photos/group-photog.jpg) no-repeat center center/cover;
 }
 
@@ -42,12 +42,12 @@ body {
     overflow: hidden;
 }
 
-.red-nav-s>*{
+.red-nav-s>* {
     padding-top: 1.5rem;
     padding-left: calc(1rem + 20px);
 }
 
-.red-nav-s>a:first-of-type{
+.red-nav-s>a:first-of-type {
     font-size: 1.7rem;
     padding: 0;
     padding-left: calc(1rem + 20px);
@@ -86,13 +86,14 @@ body {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     color: white;
 }
-.red-nav-m>*{
+
+.red-nav-m>* {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 20px;
 }
 
-#side-open:hover{
+#side-open:hover {
     cursor: pointer;
 }
 
@@ -119,6 +120,19 @@ body {
     width: 30%;
     padding: 0 2rem;
     align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-main-content {
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+
+    .hero-main-content-left,
+    .hero-main-content-right {
+        width: fit-content;
+        padding: 0;
+    }
 }
 
 .hero-main-content-photo {
@@ -155,6 +169,12 @@ body {
     margin: 1rem 0;
 }
 
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+}
+
 .dropdown {
     display: inline-block;
 }
@@ -179,38 +199,48 @@ body {
     margin-right: 20px;
 }
 
-.footer{
+.footer {
     width: calc(100% - 100px);
     margin: 0;
     padding: 50px;
     background-color: var(--hccri-red);
     color: white;
 }
-.footer-icons{
+
+.footer-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-.footer-icons>div{
+
+.footer-icons>div {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-.footer-icons>div>span{
+
+.footer-icons>div>span {
     display: inline-block;
     padding-left: 5px;
     padding-right: 40px;
 }
-.footer-small{
+
+@media screen and (max-width: 768px) {
+    .footer-icons>div>span {
+        padding-right: 0;
+    }
+}
+
+.footer-small {
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px){
-    .footer-icons{
+@media screen and (max-width: 768px) {
+    .footer-icons {
         display: flex;
         justify-content: center;
         align-items: center;
