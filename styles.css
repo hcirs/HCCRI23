@@ -238,3 +238,26 @@ body {
         padding-right: 0;
     }
 }
+
+#countdown{
+    background-color: #690B0B;
+    color: white;
+    position: relative;
+}
+
+#countdown>h1{
+    padding: 20px;
+}
+
+#countdown>a{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #690B0B;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    outline-width: 0;
+}
