@@ -27,6 +27,23 @@ body {
         url(static/photos/group-photog.jpg) no-repeat center center/cover;
 }
 
+/* dedicated backgrounds for each subpage */
+.hero-head.about-hacas {
+    background: linear-gradient(to bottom, #ffffff75, #ffffff87, #ffffffee, #ffffffff),
+        url(static/photos/hacas.webp) no-repeat center center/cover;
+}
+
+.hero-head.about-hccri {
+    background: linear-gradient(to bottom, #ffffff75, #ffffff87, #ffffffee, #ffffffff),
+        url(static/photos/_W-98.jpeg) no-repeat center center/cover;
+}
+
+.hero-head.about-secretariat {}
+
+.hero-head.registration {}
+
+.hero-head.faq {}
+
 .red-nav-s {
     background-color: var(--hccri-red);
     height: 100%;
@@ -108,18 +125,18 @@ body {
     margin: 0 auto;
     padding: 3rem;
     display: flex;
+    justify-content: center;
 }
 
 .hero-main-content-left {
-    width: 70%;
     padding: 0 2rem;
-
+    flex-grow: 7;
 }
 
 .hero-main-content-right {
-    width: 30%;
     padding: 0 2rem;
     align-items: flex-start;
+    flex-grow: 3;
 }
 
 @media screen and (max-width: 768px) {
@@ -239,47 +256,53 @@ body {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px){
-    .hero-main-content{
+@media screen and (max-width: 768px) {
+    .hero-main-content {
         flex-direction: column-reverse;
     }
-    .hero-main-content>div{
+
+    .hero-main-content>div {
         padding: 0;
         width: auto;
     }
-    .hero-main-content-right{
+
+    .hero-main-content-right {
         width: 100%;
         position: static;
         padding-bottom: 20px;
     }
-    .footer-icons{
+
+    .footer-icons {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .footer-icons>*{
+
+    .footer-icons>* {
         width: 100%;
     }
-    .footer-icons>div{
+
+    .footer-icons>div {
         justify-content: flex-start;
     }
-    .footer-icons>div>span{
+
+    .footer-icons>div>span {
         padding-right: 0;
     }
 }
 
-#countdown{
+#countdown {
     background-color: #690B0B;
     color: white;
     position: relative;
 }
 
-#countdown>h1{
+#countdown>h1 {
     padding: 20px;
 }
 
-#countdown>a{
+#countdown>a {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -290,4 +313,113 @@ body {
     padding: 10px;
     border-radius: 5px;
     outline-width: 0;
+}
+
+/* table on registration page */
+
+.reg-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+}
+
+.reg-table thead tr {
+    background-color: var(--hccri-red);
+    color: #ffffff;
+    text-align: left;
+}
+
+.reg-table th,
+.reg-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.reg-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.reg-table thead tr th {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.reg-table tbody tr td {
+    border-right: 1px solid #dddddd;
+}
+
+.reg-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* faq sections on faq page */
+.faq-container {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid var(--hccri-red);
+}
+
+.accordion button {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion button iconify-icon {
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion button:hover {
+    cursor: pointer;
+    color: var(--hccri-red);
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: var(--hccri-red);
+}
+
+.accordion button[aria-expanded='true'] iconify-icon {
+    transform: rotate(180deg);
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300;
 }
