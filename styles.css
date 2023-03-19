@@ -261,6 +261,10 @@ body {
         flex-direction: column-reverse;
     }
 
+    .hero-main-content#countdown {
+        flex-direction: column;
+    }
+
     .hero-main-content>div {
         padding: 0;
         width: auto;
