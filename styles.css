@@ -321,48 +321,51 @@ body {
 
 /* table on registration page */
 
-.reg-table {
+.table-wrapper {
+    overflow: auto;
+}
+
+.hccri-table {
     margin: 0 auto;
     border-collapse: collapse;
     border: 1px solid #dddddd;
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
+    overflow-x: scroll;
 }
 
-.reg-table thead tr {
+.hccri-table thead tr {
     background-color: var(--hccri-red);
     color: #ffffff;
     text-align: left;
 }
 
-.reg-table th,
-.reg-table td {
+.hccri-table th,
+.hccri-table td {
     padding: 12px 15px;
     text-align: left;
 }
 
-.reg-table tbody tr {
+.hccri-table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
 
-.reg-table thead tr th {
+.hccri-table thead tr th {
     border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.reg-table tbody tr td {
+.hccri-table tbody tr td {
     border-right: 1px solid #dddddd;
 }
 
-.reg-table tbody tr:nth-of-type(even) {
+.hccri-table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
 
 /* faq sections on faq page */
 .faq-container {
-    margin: 0 auto;
-    padding: 4rem;
-    width: 48rem;
+    padding: 2rem 0;
 }
 
 .accordion .accordion-item {
@@ -374,15 +377,11 @@ body {
 }
 
 .accordion button {
-    position: relative;
-    text-align: left;
     width: 100%;
     padding: 1em 0;
     font-size: 1.15rem;
-    font-weight: 400;
     border: none;
     background: none;
-    outline: none;
 
     display: flex;
     justify-content: space-between;
