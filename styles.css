@@ -150,6 +150,12 @@ body {
         width: fit-content;
         padding: 0;
     }
+    #countdown{
+        border-radius: 10px;
+    }
+    #countdown>#event{
+        padding-bottom: 50px;
+    }
 }
 
 .hero-main-content-photo {
