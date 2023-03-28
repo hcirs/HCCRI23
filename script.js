@@ -18,7 +18,7 @@ document.getElementById("side-close").addEventListener("click", () => {
 
 // countdown
 
-const targetdate = new Date(2023,3,1,12,0,0,0); //set as 1 april 2023 12pm, change as nec
+const targetdate = new Date(2023,3,27,23,59,59,0); //27 april 2023 2359
 const confdate = new Date(2023,5,19,0,0,0) //19 june 2023, 12am
 let now = Date.now()
 
