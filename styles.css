@@ -231,6 +231,21 @@ div.hero{
     margin-right: 20px;
 }
 */
+
+.half-width{
+    outline-width: 0px;
+    border: none;
+    background-color: var(--hccri-red);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: calc(50% - 60px);
+    margin-top: 30px;
+}
+.half-width:hover{
+    cursor: pointer;
+}
+
 .footer {
     width: calc(100% - 100px);
     margin: 0;
