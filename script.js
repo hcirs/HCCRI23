@@ -1,3 +1,5 @@
+//Navbar
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
@@ -15,6 +17,35 @@ document.getElementById("side-open").addEventListener("click", () => {
 document.getElementById("side-close").addEventListener("click", () => {
   document.getElementsByClassName("red-nav-s")[0].style.width = "0px";
 });
+
+//Dropdown
+let oneisactive=false
+document.querySelectorAll('.dropdown').forEach((v)=>{
+  v.addEventListener('click',()=>{
+    if(v.children[1].style.height=='0px'||v.children[1].style.height=='')
+    {
+      if(oneisactive){
+        document.querySelectorAll('.dropdown').forEach((v)=>{
+          v.children[1].style.height='0px'
+          v.children[1].style.padding='0px'
+          v.children[1].style.marginTop='0px'
+          v.children[1].style.marginRight='0px'
+        })
+      }
+      v.children[1].style.height='auto'
+      v.children[1].style.padding='12px 16px'
+      v.children[1].style.marginTop='10px'
+      v.children[1].style.marginRight='20px'
+      oneisactive=true
+    }
+    else{v.children[1].style.height='0px'
+    v.children[1].style.padding='0px'
+    v.children[1].style.marginTop='0px'
+    v.children[1].style.marginRight='0px'
+    oneisactive=false
+  }
+  })
+})
 
 // countdown
 

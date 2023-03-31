@@ -9,6 +9,10 @@ body {
     --hccri-yellow: #CAA213;
 }
 
+div.hero{
+    padding-top: 0rem;
+}
+
 .hero,
 .hero-head {
     width: 100%;
@@ -209,7 +213,7 @@ body {
 
 .dropdown-content {
     display: block;
-    height: 0;
+    height: 0px;
     overflow: hidden;
     background-color: #480808;
     min-width: fit-content;
@@ -219,14 +223,14 @@ body {
     border-radius: .5rem;
     transition-duration: 0.4s;
 }
-
+/*
 .dropdown:hover .dropdown-content {
     height: auto;
     padding: 12px 16px;
     margin-top: 10px;
     margin-right: 20px;
 }
-
+*/
 .footer {
     width: calc(100% - 100px);
     margin: 0;
