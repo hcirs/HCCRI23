@@ -232,6 +232,39 @@ div.hero{
 }
 */
 
+.document-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.document-group>a{
+    width: 100%;
+    height: 100px;
+    background-color: var(--hccri-red);
+    border-radius: .5rem;
+    color: white;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.document-group>a>svg{
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.document-group>a>p{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    width: calc(100% - 125px);
+    text-align: left;
+    margin: 0;
+}
+
 .half-width{
     outline-width: 0px;
     border: none;
