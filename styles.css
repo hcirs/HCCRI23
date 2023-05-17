@@ -148,6 +148,10 @@ div.hero{
     border-radius: 10px;
 }
 
+.secretariat{
+    text-align: left;
+}
+
 @media screen and (max-width: 768px) {
     .hero-main-content {
         flex-direction: column-reverse;
@@ -262,6 +266,34 @@ div.hero{
     transform: translateY(-50%);
     width: calc(100% - 125px);
     text-align: left;
+    margin: 0;
+}
+
+.insta-pill{
+    height: 50px;
+    width: 220px;
+    border-radius: 25px;
+    background: linear-gradient(to top right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    color: white;
+    position: relative;
+    margin-left: calc(100% - 240px);
+}
+
+.insta-pill:hover{
+    cursor: pointer;
+}
+
+.insta-pill>svg{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.insta-pill>p{
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    transform: translateY(-50%);
     margin: 0;
 }
 
